@@ -1,0 +1,12 @@
+title: Métodos Numéricos
+remote_theme: "jekyll/minima@1e8a445"
+nav_pages:
+  - otimizacao.md
+  - portfolio.md
+author:
+  name: Prof. Wanderlei M. Pereira Junior
+  email: "wanderlei_junior@ufcat.edu.br"
+social_links:
+  - title: Jekyll at X (formerly Twitter)
+    icon: linkedin
+    url: "https://www.linkedin.com/in/wmpjrufg/"
