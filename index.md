@@ -1,6 +1,6 @@
 ---
 layout: home
-title: 0-Intro
+title: 0 - Intro
 ---
 
 <!--Don't delete this script-->
