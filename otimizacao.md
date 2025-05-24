@@ -8,7 +8,7 @@ title: 1 - Otimização
 <script id = "MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <!--Don't delete this script-->
 
-<h2>1.1 - Introdução</h2>
+<h2>Introdução</h2>
 
 <p align = "justify">
 As técnicas de otimização consistem em métodos matemáticos para encontrar soluções ótimas sob restrições específicas, com aplicações em engenharia, ciências exatas e até mesmo ciências sociais.
@@ -46,7 +46,7 @@ Uma fábrica produz dois modelos de tratores: (a) Trator Agrícola Colheitadeira
     </tbody>
 </table>
 
-<h3>Solução:</h3>
+<h5>Solução:</h5>
 
 <p align = "justify">
 A <a href="#eq1" style="color: #2e6da4; font-weight: bold;">equação (1)</a> apresenta o equacionamento do objetivo, <a href="#eq2" style="color: #2e6da4; font-weight: bold;">equação (2)</a> a restrição de produção mensal em horas e <a href="#eq3" style="color: #2e6da4; font-weight: bold;">equação (3)</a> a restrição de produção mensal em unidades:
@@ -107,7 +107,7 @@ A <a href="#eq1" style="color: #2e6da4; font-weight: bold;">equação (1)</a> ap
 Considerando as simulações realizadas na <a href="#tab2" style="color: #2e6da4; font-weight: bold;">Tabela 2</a>, a solução que apresentou o melhor desempenho (maximização do lucro!) foi a <strong>Solução 3</strong>, atingindo um lucro total de <strong>R$ 765.000</strong> respeitando a restrição de capacidade produtiva (2.400 horas mensais).
 </p>
 
-<h2>Termos da otimização</h2>
+<h3>Termos da otimização</h3>
 
 <ul>
     <li>
@@ -137,7 +137,7 @@ Considerando as simulações realizadas na <a href="#tab2" style="color: #2e6da4
     </li>
 </ul>
 
-<h2>Tipos de algoritmo</h2>
+<h3>Tipos de algoritmo</h3>
 
 <p align="justify">
 De forma geral o processo de busca de solução em um problema de otimização caracteriza-se como um método onde a solução é encontrada pelo processo iterativo da <a href="#eq4" style="color: #2e6da4; font-weight: bold;">equação (4)</a>.
@@ -209,7 +209,7 @@ A formulação do problema envolve <i>M</i> funções objetivo, representadas po
     </tr>
 </table>
 
-<h2>1.2 - Usando pacotes de otimização</h2>
+<h2>Usando pacotes de otimização</h2>
 
 <p align="justify">
 O Python oferece poderosas ferramentas de otimização através do pacote <code>scipy.optimize</code>. A função <code>minimize</code> implementa diversos algoritmos numéricos para encontrar mínimos de funções não-lineares.
@@ -218,21 +218,22 @@ Vejamos um exemplo:
 </p>
 
 ```python
+# 0. Bibliotecas
 import numpy as np
 from scipy.optimize import minimize
 
-# Definição da função objetivo
-def objective_function(x):
+# 1. Definição da função objetivo
+def obj(x):
     return x[0]**2 + x[1]**2
 
-# Chute inicial
+# 2. Chute inicial
 x0 = np.array([1, 1])
 
-# Processo de minimização
-result = minimize(objective_function, x0)
+# 3. Processo de minimização
+resultado = minimize(obj, x0)
 
-# Resultados
-print(result)
+# 4. Resultados
+print(resultado)
 ```
 
 ```bash
@@ -262,7 +263,7 @@ from scipy.optimize import minimize
 import numpy as np
 
 # 1. Definir a função objetivo para minimização
-def funcao_objetivo(variaveis):
+def obj(variaveis):
     x, y = variaveis
     return 20000 * x + 35000 * y
 
@@ -284,7 +285,7 @@ restricoes = ({'type': 'ineq',
 
 # 6. Resolver o problema de otimização
 resultado = minimize(
-    fun=funcao_objetivo,
+    fun=obj,
     x0=chute_inicial,
     bounds=limites,
     constraints=restricoes
@@ -292,13 +293,14 @@ resultado = minimize(
 
 # 7. Imprimir os resultados
 print("Solução ótima:")
-print(f"x = {resultado.x[0]:.2f} unidades")
-print(f"y = {resultado.x[1]:.2f} unidades")
+print(f"x = {resultado.x[0]:.4f} unidades")
+print(f"y = {resultado.x[1]:.4f} unidades")
+print(f"fo = R$ {resultado.fun:.2f}")
 ```
 
 ```bash
-# Resultado da otimização
-Solução ótima:
-x = 25.00 unidades
-y = 14.37 unidades
+# Solução ótima:
+x = 24.9996 unidades
+y = 14.3743 unidades
+fo = R$ 1003090.53
 ```
