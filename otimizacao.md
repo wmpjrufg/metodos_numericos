@@ -202,3 +202,13 @@ A formulação do problema envolve \(M\) funções objetivo, representadas por \
 <p align="justify">
 O Python oferece poderosas ferramentas de otimização através do pacote <code>scipy.optimize</code>. A função <code>minimize</code> implementa diversos algoritmos numéricos para encontrar mínimos de funções não-lineares.
 </p>
+
+<table style="width:100%; border-collapse: collapse; border-radius: 10px; overflow: hidden;">
+    <tr style="background-color: #4b86b4; color: white;">
+        <td style="padding: 10px; border: 1px solid #ddd; font-weight: bold;">Importante</td>
+    </tr>
+    <!-- Linhas com azul claro alternado -->
+    <tr style="background-color: #e7f2ff;">
+        <td style="padding: 6px; border: 1px solid #ddd;"><p align="justify">Existem duas formas de criação de um problema de otimização, são elas: (a) maximização e (b) minimização. Neste material optou-se pela escrita das funções matemáticas do problema de otimização na forma de minimização. Para problemas de maximização basta multiplicar a função por -1.</p></td>
+    </tr>
+</table>
