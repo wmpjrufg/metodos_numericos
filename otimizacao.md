@@ -149,9 +149,9 @@ De forma geral o processo de busca de solução em um problema de otimização c
 </table>
 
 <p align="justify">
-Onde <i><strong>x<sub>(k+1)</sub></strong></i> é o vetor de variáveis na iteração <i>k+1</i>; <i><strong>x<sub>(k)</sub></strong></i> é o vetor de variáveis na iteração <i>k</i>, <i><strong>w<sub>(k)</sub></strong></i> é a função de atualização da direção de busca no espaço de projeto e <i>α<sub>k</sub></i> é o passo da direção de busca.
+Onde <i><strong>x<sub>k+1</sub></strong></i> é o vetor de variáveis na iteração <i>k+1</i>; <i><strong>x<sub>k</sub></strong></i> é o vetor de variáveis na iteração <i>k</i>, <i><strong>w<sub>k</sub></strong></i> é a função de atualização da direção de busca no espaço de projeto e <i>α<sub>k</sub></i> é o passo da direção de busca.
 <br><br>
-A diferença entre a grande maioria dos métodos numéricos de otimização está no parâmetro <i><strong>w<sub>(k)</sub></strong></i>, onde cada método terá seu processo de busca. Em linhas gerais os processos otimização tem duas fundamentações: (a) Processo determinístico (podendo ser baseados em derivada); e (b) Processo probabilístico.
+A diferença entre a grande maioria dos métodos numéricos de otimização está no parâmetro <i><strong>w<sub>k</sub></strong></i>, onde cada método terá seu processo de busca. Em linhas gerais os processos otimização tem duas fundamentações: (a) Processo determinístico (podendo ser baseados em derivada); e (b) Processo probabilístico.
 </p>
 
 <ol>
@@ -168,7 +168,7 @@ A diferença entre a grande maioria dos métodos numéricos de otimização est�
         <ul>
             <li>Algoritmos Genéticos</li>
             <li>Enxame de Partículas (PSO)</li>
-            <li>Simulated Annealing</li>
+            <li>Recozimento Simulado</li>
         </ul>
     </li>
 </ol>
