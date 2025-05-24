@@ -17,7 +17,7 @@ Uma fábrica produz dois modelos de tratores: (a) Trator Agrícola Colheitadeira
 </p>
 
 <p align="center" id="tab1"><b>Tabela 1.</b> Dados de produção da fábrica.</p>
-<table>
+<table style="width:100%">
     <thead>
         <tr>
             <th>Recurso</th>
@@ -64,3 +64,43 @@ A <a href="#eq1" style="color: #2e6da4; font-weight: bold;">equação (1)</a> ap
         <td style="width: 10%;"><p align = "right" id = "eq3">(3)</p></td>
     </tr>
 </table>
+
+<p align="center" id="tab2"><b>Tabela 2.</b> Avaliação de pontos de projeto para o problema de otimização e restrições.</p>
+<table style="width:100%">
+    <thead>
+        <tr>
+            <th>Solução</th>
+            <th><i>x</i></th>
+            <th><i>y</i/</th>
+            <th><i>l(x,y)</i></th>
+            <th><i>g(x,y)</i></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>15</td>
+            <td>10</td>
+            <td>\[ l(15,10) = 20000 \cdot 15 + 35000 \cdot 10 = 650.000 \]</td>
+            <td>\[ g(15,10) = 50 \cdot 15 + 80 \cdot 10 = 1.550 \leq 2.400 \]</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>20</td>
+            <td>5</td>
+            <td>\[ l(20,5) = 20000 \cdot 20 + 35000 \cdot 5 = 575.000 \]</td>
+            <td>\[ g(20,5) = 50 \cdot 20 + 80 \cdot 5 = 1.400 \leq 2.400 \]</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>12</td>
+            <td>15</td>
+            <td>\[ l(12,15) = 20000 \cdot 12 + 35000 \cdot 15 = 765.000 \]</td>
+            <td>\[ g(12,15) = 50 \cdot 12 + 80 \cdot 15 = 1.800 \leq 2.400 \]</td>
+        </tr>
+  </tbody>
+</table>
+
+<p align = "justify">
+Considerando as simulações realizadas na <a href="#tab2" style="color: #2e6da4; font-weight: bold;">Tabela 2</a>, a solução que apresentou o melhor desempenho foi a <strong>Solução 2</strong>, atingindo um lucro total de <strong>R$ 575.000</strong> respeitando a restrição de capacidade produtiva (2.400 horas mensais).
+</p>
