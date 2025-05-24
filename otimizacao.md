@@ -154,3 +154,21 @@ Onde <i><strong>x<sub>(k+1)</sub></strong></i> é o vetor de variáveis na itera
 A diferença entre a grande maioria dos métodos numéricos de otimização está no parâmetro <i><strong>w<sub>(k)</sub></strong></i>, onde cada método terá seu processo de busca. Em linhas gerais os processos otimização tem duas fundamentações: (a) Processo determinístico (podendo ser baseados em derivada); e (b) Processo probabilístico.
 </p>
 
+<ol>
+    <li>
+        <strong>Processo determinístico</strong>:
+        <ul>
+            <li>Método do Gradiente Descendente</li>
+            <li>Método de Newton</li>
+            <li>Método Quasi-Newton (BFGS)</li>
+        </ul>
+    </li>
+    <li>
+        <strong>Processo probabilístico</strong>:
+        <ul>
+            <li>Algoritmos Genéticos</li>
+            <li>Enxame de Partículas (PSO)</li>
+            <li>Simulated Annealing</li>
+        </ul>
+    </li>
+</ol>
