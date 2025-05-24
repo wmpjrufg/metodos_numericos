@@ -143,13 +143,13 @@ De forma geral o processo de busca de solução em um problema de otimização c
 
 <table style="width:100%">
     <tr>
-        <td style="width: 90%;">\[ \boldmath{x}_{k+1} = \boldmath{x}_k + \alpha_k \cdot \boldmath{w}_k \]</td>
+        <td style="width: 90%;">\[ \mathbf{x}_{k+1} = \mathbf{x}_k + \alpha_k \cdot \mathbf{w}_k \]</td>
         <td style="width: 10%;"><p align = "right" id = "eq4">(4)</p></td>
     </tr>
 </table>
 
 <p align="justify">
-Onde <i><strong>x<sub>(k+1)</sub></strong></i> é o vetor de variáveis na iteração <i>k</i>; <i><strong>x<sub>(k)</sub></strong></i> é o vetor de variáveis na iteração <i>k</i>, <i><strong>w<sub>(k)</sub></strong></i> é a função de atualização da direção de busca no espaço de projeto e <i>α<sub>k</sub></i> é o passo da direção de busca.
+Onde <i><strong>x<sub>(k+1)</sub></strong></i> é o vetor de variáveis na iteração <i>k+1</i>; <i><strong>x<sub>(k)</sub></strong></i> é o vetor de variáveis na iteração <i>k</i>, <i><strong>w<sub>(k)</sub></strong></i> é a função de atualização da direção de busca no espaço de projeto e <i>α<sub>k</sub></i> é o passo da direção de busca.
 <br><br>
 A diferença entre a grande maioria dos métodos numéricos de otimização está no parâmetro <i><strong>w<sub>(k)</sub></strong></i>, onde cada método terá seu processo de busca. Em linhas gerais os processos otimização tem duas fundamentações: (a) Processo determinístico (podendo ser baseados em derivada); e (b) Processo probabilístico.
 </p>
