@@ -143,7 +143,7 @@ De forma geral o processo de busca de solução em um problema de otimização c
 
 <table style="width:100%">
     <tr>
-        <td style="width: 90%;">\[ \boldmath{\bm{x}}_{k+1} = \boldmath{\bm{x}}_k + \alpha_k \cdot \boldmath{\bm{w}}_k \]</td>
+        <td style="width: 90%;">\[ \boldmath{x}_{k+1} = \boldmath{x}_k + \alpha_k \cdot \boldmath{w}_k \]</td>
         <td style="width: 10%;"><p align = "right" id = "eq4">(4)</p></td>
     </tr>
 </table>
