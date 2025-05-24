@@ -44,7 +44,7 @@ Uma fábrica produz dois modelos de tratores: (a) Trator Agrícola Colheitadeira
     </tbody>
 </table>
 
-<h3>Montando a solução:</h3>
+<h3>Solução:</h3>
 
 <p align = "justify">
 A <a href="#eq1" style="color: #2e6da4; font-weight: bold;">equação (1)</a> apresenta o equacionamento do objetivo, <a href="#eq2" style="color: #2e6da4; font-weight: bold;">equação (2)</a> a restrição de produção mensal em horas e <a href="#eq3" style="color: #2e6da4; font-weight: bold;">equação (3)</a> a restrição de produção mensal em unidades:
@@ -60,7 +60,7 @@ A <a href="#eq1" style="color: #2e6da4; font-weight: bold;">equação (1)</a> ap
         <td style="width: 10%;"><p align = "right" id = "eq2">(2)</p></td>
     </tr>
     <tr>
-        <td style="width: 90%;">\[ 0 \leq x \leq 25 \;\; 0 \leq y \leq 15 \]</td>
+        <td style="width: 90%;">\[ 0 \leq x \leq 25 ,\;\; 0 \leq y \leq 15 \]</td>
         <td style="width: 10%;"><p align = "right" id = "eq3">(3)</p></td>
     </tr>
 </table>
