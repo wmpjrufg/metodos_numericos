@@ -30,12 +30,16 @@ Uma fábrica produz dois modelos de tratores: (a) Trator Agrícola Colheitadeira
             <td>Lucro Unitário</td>
             <td>R$ 20.000</td>
             <td>R$ 35.000</td>
-            <td>-</td>
         </tr>
         <tr>
             <td>Horas de Montagem</td>
             <td>50 h/unidade</td>
             <td>80 h/unidade</td>
+        </tr>
+        <tr>
+            <td>Demanda máxima</td>
+            <td>25 unidades</td>
+            <td>15 unidades</td>
         </tr>
     </tbody>
 </table>
@@ -43,16 +47,20 @@ Uma fábrica produz dois modelos de tratores: (a) Trator Agrícola Colheitadeira
 <h3>Montando a solução:</h3>
 
 <p align = "justify">
-A <a href="#eq1" style="color: #2e6da4; font-weight: bold;">equação (1)</a> apresenta o equacionamento do objetivo e <a href="#eq2" style="color: #2e6da4; font-weight: bold;">equação (2)</a> a restrição de produção:
+A <a href="#eq1" style="color: #2e6da4; font-weight: bold;">equação (1)</a> apresenta o equacionamento do objetivo, <a href="#eq2" style="color: #2e6da4; font-weight: bold;">equação (2)</a> a restrição de produção mensal em horas e <a href="#eq3" style="color: #2e6da4; font-weight: bold;">equação (3)</a> a restrição de produção mensal em unidades:
 </p>
 
 <table style="width:100%">
     <tr>
-        <td style="width: 90%;">\[ l \left(x,y\right) = 20000 \cdot x + 35000 \cdot y\]</td>
+        <td style="width: 90%;">\[ l \left(x,y\right) = 20000 \cdot x + 35000 \cdot y \]</td>
         <td style="width: 10%;"><p align = "right" id = "eq1">(1)</p></td>
     </tr>
     <tr>
-        <td style="width: 90%;">\[ g \left(x,y\right) = 50 \cdot x + 80 \cdot y \leq 2400\]</td>
+        <td style="width: 90%;">\[ g \left(x,y\right) = 50 \cdot x + 80 \cdot y \leq 2400 \]</td>
         <td style="width: 10%;"><p align = "right" id = "eq2">(2)</p></td>
+    </tr>
+    <tr>
+        <td style="width: 90%;">\[ 0 \leq x \leq 25 \;\; 0 \leq y \leq 15 \]</td>
+        <td style="width: 10%;"><p align = "right" id = "eq3">(3)</p></td>
     </tr>
 </table>
