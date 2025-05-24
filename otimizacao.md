@@ -178,29 +178,25 @@ A diferença entre a grande maioria dos métodos numéricos de otimização est�
 <h2>Forma geral do problema de otimização</h2>
 
 <p align="justify">
-Um problema geral de otimização assume a forma multiobjetivo (MOO) pois esta envolve várias funções objetivo que devem ser minimizadas ou maximizadas. Além disso, o problema geralmente possui uma série de restrições que igualdade o desigualdade que a solução ótima deverá respeitar, além das restrições laterais. A <a href="#eq5" style="color: #2e6da4; font-weight: bold;">equação (5)</a> apresenta o problema de otimização multiobjetivo em sua forma geral:
+Um problema geral de otimização assume a forma multiobjetivo (MOO) pois esta envolve várias funções objetivo que devem ser minimizadas ou maximizadas. Além disso, o problema geralmente possui uma série de restrições de igualdade e/ou desigualdade que a solução ótima deverá respeitar, além das restrições laterais. A <a href="#eq5" style="color: #2e6da4; font-weight: bold;">equação (5)</a> apresenta o problema de otimização multiobjetivo em sua forma geral:
 </p>
 
 <table style="width:100%">
     <tr>
-        <td style="width: 90%;">\[ \begin{cases} 
-f_m(\mathbf{x}), & m=1,2,\ldots,M; \\ 
-g_j(\mathbf{x}) \leq 0, & j=1,2,\ldots,J; \\ 
-h_k(\mathbf{x}) = 0, & k=1,2,\ldots,K; \\ 
-x_i^{(L)} \leq x_i \leq x_i^{(U)}, & i=1,2,\ldots,n. 
-\end{cases} \]</td>
+        <td style="width: 90%;">
+            \[ \begin{cases} 
+            f_m(\mathbf{x}), & m=1,2,\ldots,M; \\ 
+            g_j(\mathbf{x}) \leq 0, & j=1,2,\ldots,J; \\ 
+            h_k(\mathbf{x}) = 0, & k=1,2,\ldots,K; \\ 
+            x_i^{(L)} \leq x_i \leq x_i^{(U)}, & i=1,2,\ldots,n. 
+            \end{cases} \]
+        </td>
         <td style="width: 10%;"><p align = "right" id = "eq5">(5)</p></td>
     </tr>
 </table>
 
 <p align="justify">  
-A formulação do problema envolve \(M\) funções objetivo, representadas por \(f(\mathbf{x}) = (f_1(\mathbf{x}), f_2(\mathbf{x}), ..., f_M(\mathbf{x}))^T\). Onde \(x_i\) representa as variáveis de projeto do problema de otimização \(n\) dimensional. O conjunto de restrições são definidas pelas inequações \(g_j\), equações \(h_k\) e pelas restrições laterais \(x_i^{(L)}\) e \(x_i^{(U)}\). Os limites \(x_i^{(L)}\) e \(x_i^{(U)}\) estabelecem o espaço de projeto \(\mathcal{D}\) . No caso de objetivos de maximização, eles são convertidos para problemas de minimização, para isso as funções de maximização são multiplicadas por menos um. A Figura 2.1 apresenta possíveis soluções de um problema multiobjetivo de duas dimensões considerando a diversidade de abordagens.
-</p>
-
-<h2>1.2 - Usando pacotes de otimização</h2>
-
-<p align="justify">
-O Python oferece poderosas ferramentas de otimização através do pacote <code>scipy.optimize</code>. A função <code>minimize</code> implementa diversos algoritmos numéricos para encontrar mínimos de funções não-lineares.
+A formulação do problema envolve <i>M</i> funções objetivo, representadas por <i>f(<strong>x</strong>) = (f<sub>1</sub>(<strong>x</strong>), f<sub>2</sub>(<strong>x</strong>), ..., f<sub>M</sub>(<strong>x</strong>))<sup>T</sup></i>. Onde <i><strong>x</strong></i> representa as variáveis de projeto do problema de otimização <i>n</i> dimensional. O conjunto de restrições são definidas pelas inequações <i>g</strong><sub>j</sub></i>, equações <i>h</strong><sub>k</sub></i> e pelas restrições laterais <i>x<sub>i</sub><sup>L</sup></i>, <i>x<sub>i</sub><sup>U</sup></i>. Os limites <i>x<sub>i</sub><sup>L</sup></i> e <i>x<sub>i</sub><sup>U</sup></i> estabelecem o espaço de projeto \(\mathcal{D}\). 
 </p>
 
 <table style="width:100%; border-collapse: collapse; border-radius: 10px; overflow: hidden;">
@@ -212,3 +208,9 @@ O Python oferece poderosas ferramentas de otimização através do pacote <code>
         <td style="padding: 6px; border: 1px solid #ddd;"><p align="justify">Existem duas formas de criação de um problema de otimização, são elas: (a) maximização e (b) minimização. Neste material optou-se pela escrita das funções matemáticas do problema de otimização na forma de minimização. Para problemas de maximização basta multiplicar a função por -1.</p></td>
     </tr>
 </table>
+
+<h2>1.2 - Usando pacotes de otimização</h2>
+
+<p align="justify">
+O Python oferece poderosas ferramentas de otimização através do pacote <code>scipy.optimize</code>. A função <code>minimize</code> implementa diversos algoritmos numéricos para encontrar mínimos de funções não-lineares.
+</p>
