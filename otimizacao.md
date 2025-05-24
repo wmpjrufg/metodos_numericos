@@ -71,7 +71,7 @@ A <a href="#eq1" style="color: #2e6da4; font-weight: bold;">equação (1)</a> ap
         <tr>
             <th>Solução</th>
             <th><i>x</i></th>
-            <th><i>y</i>/</th>
+            <th><i>y</i></th>
             <th><i>l(x,y)</i></th>
             <th><i>g(x,y)</i></th>
         </tr>
@@ -107,7 +107,7 @@ Considerando as simulações realizadas na <a href="#tab2" style="color: #2e6da4
 
 <h2>Termos da otimização</h2>
 
-<ol>
+<ul>
     <li>
         <p align="justify">
             Função Objetivo: A função objetivo é a expressão matemática que se deseja maximizar ou minimizar no problema de otimização.
@@ -125,31 +125,31 @@ Considerando as simulações realizadas na <a href="#tab2" style="color: #2e6da4
     </li>
     <li>
         <p align="justify">
-            Variáveis de Projeto: São os parâmetros controláveis do sistema que podem ser ajustados para otimizar a função objetivo. Representadas geralmente por <i>x<sub>1</sub></i>, <i>x<sub>2</sub></i>, ..., <i>x<sub>n</sub></i></em>. Podem ser contínuas (valores reais), discretas (valores inteiros) ou binárias (0 ou 1), dependendo da natureza do problema.
+            Variáveis de Projeto: São os parâmetros controláveis do sistema que podem ser ajustados para otimizar a função objetivo. Representadas geralmente por <i>x<sub>1</sub></i>, <i>x<sub>2</sub></i>, ..., <i>x<sub>n</sub></i>. Podem ser contínuas (valores reais), discretas (valores inteiros) ou binárias (0 ou 1), dependendo da natureza do problema.
         </p>
     </li>
     <li>
         <p align="justify">
-            >Solução Ótima: É a combinação específica de valores das variáveis de projeto que fornece o melhor valor possível da função objetivo dentro da região viável. Pode ser única (ótimo global ou local) ou múltipla (quando existem várias combinações com o mesmo valor ótimo).
+            Solução Ótima: É a combinação específica de valores das variáveis de projeto que fornece o melhor valor possível da função objetivo dentro da região viável. Pode ser única (ótimo global ou local) ou múltipla (quando existem várias combinações com o mesmo valor ótimo).
         </p>
     </li>
-</ol>
+</ul>
 
 <h2>Tipos de algoritmo</h2>
 
 <p align="justify">
-De forma geral o processo de busca de solução de um problema de otimização se caracteriza como um método onde a solução é encontrada pelo processo iterativo da <a href="#eq4" style="color: #2e6da4; font-weight: bold;">equação (4)</a>.
+De forma geral o processo de busca de solução em um problema de otimização caracteriza-se como um método onde a solução é encontrada pelo processo iterativo da <a href="#eq4" style="color: #2e6da4; font-weight: bold;">equação (4)</a>.
 </p>
 
 <table style="width:100%">
     <tr>
-        <td style="width: 90%;">\[ \mathbf{x}_{k+1} = \mathbf{x}_k + \alpha_k \cdot \mathbf{w}_k \]</td>
+        <td style="width: 90%;">\[ \boldmath{\bm{x}}_{k+1} = \boldmath{\bm{x}}_k + \alpha_k \cdot \boldmath{\bm{w}}_k \]</td>
         <td style="width: 10%;"><p align = "right" id = "eq4">(4)</p></td>
     </tr>
 </table>
 
 <p align="justify">
-Onde <i><strong>x<sub>(k+1)</sub></strong></i> é o vetor de variáveis na iteração <i>k</i>; <strong>x<sub>(k)</sub></strong> é o vetor de variáveis na iteração <i>k</i>, <i><strong>w<sub>(k)</sub></strong></i> é a função de atualização da direção de busca no espaço de projeto e <i>α<sub>k</sub></i> é o passo da direção de busca.
+Onde <i><strong>x<sub>(k+1)</sub></strong></i> é o vetor de variáveis na iteração <i>k</i>; <i><strong>x<sub>(k)</sub></strong></i> é o vetor de variáveis na iteração <i>k</i>, <i><strong>w<sub>(k)</sub></strong></i> é a função de atualização da direção de busca no espaço de projeto e <i>α<sub>k</sub></i> é o passo da direção de busca.
 <br><br>
 A diferença entre a grande maioria dos métodos numéricos de otimização está no parâmetro <i><strong>w<sub>(k)</sub></strong></i>, onde cada método terá seu processo de busca. Em linhas gerais os processos otimização tem duas fundamentações: (a) Processo determinístico (podendo ser baseados em derivada); e (b) Processo probabilístico.
 </p>
