@@ -251,3 +251,46 @@ njev: 3
 ```
 <p align="justify">
 A documentação completa da função <code>scipy.optimize</code> pode ser vista no <a href="https://docs.scipy.org/doc/scipy-1.15.3/reference/generated/scipy.optimize.minimize.html" target="_blank" style="color: #2e6da4; font-weight: bold;"><i>link</i></a>.</p>
+
+<p align="justify">
+Agora avaliemos o exemplo anteriormente apresentado:
+</p>
+
+```python
+from scipy.optimize import minimize
+import numpy as np
+
+# 1. Definir a função objetivo para minimização
+def funcao_objetivo(variaveis):
+    x, y = variaveis
+    return 20000 * x + 35000 * y
+
+# 2. Definir as restrições
+def restricao(variaveis):
+    x, y = variaveis
+    return 50 * x + 80 * y - 2400
+
+# 3. Configurar os limites das variáveis
+limites = ((0, 25),   # Limites para x (0 ≤ x ≤ 25)
+           (0, 15))   # Limites para y (0 ≤ y ≤ 15)
+
+# 4. Chute inicial
+chute_inicial = np.array([10, 10])
+
+# 5. Configurar a restrição
+restricoes = ({'type': 'ineq',
+              'fun': restricao},)
+
+# 6. Resolver o problema de otimização
+resultado = minimize(
+    fun=funcao_objetivo,
+    x0=chute_inicial,
+    bounds=limites,
+    constraints=restricoes
+)
+
+# 7. Imprimir os resultados
+print("Solução ótima:")
+print(f"x = {resultado.x[0]:.2f} unidades")
+print(f"y = {resultado.x[1]:.2f} unidades")
+```
