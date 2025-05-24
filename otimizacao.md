@@ -134,3 +134,23 @@ Considerando as simulações realizadas na <a href="#tab2" style="color: #2e6da4
         </p>
     </li>
 </ol>
+
+<h2>Tipos de algoritmo</h2>
+
+<p align="justify">
+De forma geral o processo de busca de solução de um problema de otimização se caracteriza como um método onde a solução é encontrada pelo processo iterativo da <a href="#eq4" style="color: #2e6da4; font-weight: bold;">equação (4)</a>.
+</p>
+
+<table style="width:100%">
+    <tr>
+        <td style="width: 90%;">\[ \mathbf{x}_{k+1} = \mathbf{x}_k + \alpha_k \cdot \mathbf{w}_k \]</td>
+        <td style="width: 10%;"><p align = "right" id = "eq4">(4)</p></td>
+    </tr>
+</table>
+
+<p align="justify">
+Onde <i><strong>x<sub>(k+1)</sub></strong></i> é o vetor de variáveis na iteração <i>k</i>; <strong>x<sub>(k)</sub></strong> é o vetor de variáveis na iteração <i>k</i>, <i><strong>w<sub>(k)</sub></strong></i> é a função de atualização da direção de busca no espaço de projeto e <i>α<sub>k</sub></i> é o passo da direção de busca.
+<br><br>
+A diferença entre a grande maioria dos métodos numéricos de otimização está no parâmetro <i><strong>w<sub>(k)</sub></strong></i>, onde cada método terá seu processo de busca. Em linhas gerais os processos otimização tem duas fundamentações: (a) Processo determinístico (podendo ser baseados em derivada); e (b) Processo probabilístico.
+</p>
+
