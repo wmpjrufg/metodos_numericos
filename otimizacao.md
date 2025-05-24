@@ -297,6 +297,7 @@ print(f"y = {resultado.x[1]:.2f} unidades")
 ```
 
 ```bash
+# Resultado da otimização
 Solução ótima:
 x = 25.00 unidades
 y = 14.37 unidades
