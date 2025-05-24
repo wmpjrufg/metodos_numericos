@@ -71,7 +71,7 @@ A <a href="#eq1" style="color: #2e6da4; font-weight: bold;">equação (1)</a> ap
         <tr>
             <th>Solução</th>
             <th><i>x</i></th>
-            <th><i>y</i/</th>
+            <th><i>y</i>/</th>
             <th><i>l(x,y)</i></th>
             <th><i>g(x,y)</i></th>
         </tr>
@@ -101,6 +101,36 @@ A <a href="#eq1" style="color: #2e6da4; font-weight: bold;">equação (1)</a> ap
   </tbody>
 </table>
 
-<p align = "justify">
-Considerando as simulações realizadas na <a href="#tab2" style="color: #2e6da4; font-weight: bold;">Tabela 2</a>, a solução que apresentou o melhor desempenho foi a <strong>Solução 2</strong>, atingindo um lucro total de <strong>R$ 575.000</strong> respeitando a restrição de capacidade produtiva (2.400 horas mensais).
+<p align="justify">
+Considerando as simulações realizadas na <a href="#tab2" style="color: #2e6da4; font-weight: bold;">Tabela 2</a>, a solução que apresentou o melhor desempenho (maximização do lucro!) foi a <strong>Solução 3</strong>, atingindo um lucro total de <strong>R$ 765.000</strong> respeitando a restrição de capacidade produtiva (2.400 horas mensais).
 </p>
+
+<h2>Termos da otimização</h2>
+
+<ol>
+    <li>
+        <p align="justify">
+            Função Objetivo: A função objetivo é a expressão matemática que se deseja maximizar ou minimizar no problema de otimização.
+        </p>
+    </li>
+    <li>
+        <p align="justify">
+            Restrições: Definem os limites físicos, operacionais ou de recursos dentro dos quais a solução deve ser encontrada. Podem ser expressas como igualdades ou desigualdades matemáticas (≤, ≥ ou =) que limitam as combinações possíveis das variáveis de projeto.
+        </p>
+    </li>    
+    <li>
+        <p align="justify">
+            Espaço de Projeto: Compreende todas as possíveis combinações de valores que as variáveis de projeto podem assumir, tanto as soluções viáveis (que satisfazem todas as restrições) quanto as inviáveis.
+        </p>
+    </li>
+    <li>
+        <p align="justify">
+            Variáveis de Projeto: São os parâmetros controláveis do sistema que podem ser ajustados para otimizar a função objetivo. Representadas geralmente por <i>x<sub>1</sub></i>, <i>x<sub>2</sub></i>, ..., <i>x<sub>n</sub></i></em>. Podem ser contínuas (valores reais), discretas (valores inteiros) ou binárias (0 ou 1), dependendo da natureza do problema.
+        </p>
+    </li>
+    <li>
+        <p align="justify">
+            >Solução Ótima: É a combinação específica de valores das variáveis de projeto que fornece o melhor valor possível da função objetivo dentro da região viável. Pode ser única (ótimo global ou local) ou múltipla (quando existem várias combinações com o mesmo valor ótimo).
+        </p>
+    </li>
+</ol>
