@@ -188,7 +188,7 @@ Um problema geral de otimização assume a forma multiobjetivo (MOO) pois esta e
             f_m(\mathbf{x}), & m=1,2,\ldots,M; \\ 
             g_j(\mathbf{x}) \leq 0, & j=1,2,\ldots,J; \\ 
             h_k(\mathbf{x}) = 0, & k=1,2,\ldots,K; \\ 
-            x_i^{(L)} \leq x_i \leq x_i^{(U)}, & i=1,2,\ldots,n. 
+            x_i^{L} \leq x_i \leq x_i^{U}, & i=1,2,\ldots,n. 
             \end{cases} \]
         </td>
         <td style="width: 10%;"><p align = "right" id = "eq5">(5)</p></td>
@@ -196,7 +196,7 @@ Um problema geral de otimização assume a forma multiobjetivo (MOO) pois esta e
 </table>
 
 <p align="justify">  
-A formulação do problema envolve <i>M</i> funções objetivo, representadas por <i>f(<strong>x</strong>) = (f<sub>1</sub>(<strong>x</strong>), f<sub>2</sub>(<strong>x</strong>), ..., f<sub>M</sub>(<strong>x</strong>))<sup>T</sup></i>. Onde <i><strong>x</strong></i> representa as variáveis de projeto do problema de otimização <i>n</i> dimensional. O conjunto de restrições são definidas pelas inequações <i>g</strong><sub>j</sub></i>, equações <i>h</strong><sub>k</sub></i> e pelas restrições laterais <i>x<sub>i</sub><sup>L</sup></i>, <i>x<sub>i</sub><sup>U</sup></i>. Os limites <i>x<sub>i</sub><sup>L</sup></i> e <i>x<sub>i</sub><sup>U</sup></i> estabelecem o espaço de projeto \(\mathcal{D}\). 
+A formulação do problema envolve <i>M</i> funções objetivo, representadas por <i>f(<strong>x</strong>) = (f<sub>1</sub>(<strong>x</strong>), f<sub>2</sub>(<strong>x</strong>), ..., f<sub>M</sub>(<strong>x</strong>))<sup>T</sup></i>. Onde <i><strong>x</strong></i> representa as variáveis de projeto do problema de otimização <i>n</i> dimensional. O conjunto de restrições são definidas pelas inequações <i>g<sub>j</sub></i>, equações <i>h<sub>k</sub></i> e pelas restrições laterais <i>x<sub>i</sub><sup>L</sup></i>, <i>x<sub>i</sub><sup>U</sup></i>. Os limites <i>x<sub>i</sub><sup>L</sup></i> e <i>x<sub>i</sub><sup>U</sup></i> estabelecem o espaço de projeto \(\mathcal{D}\). 
 </p>
 
 <table style="width:100%; border-collapse: collapse; border-radius: 10px; overflow: hidden;">
@@ -213,4 +213,41 @@ A formulação do problema envolve <i>M</i> funções objetivo, representadas po
 
 <p align="justify">
 O Python oferece poderosas ferramentas de otimização através do pacote <code>scipy.optimize</code>. A função <code>minimize</code> implementa diversos algoritmos numéricos para encontrar mínimos de funções não-lineares.
+<br><br>
+Vejamos um exemplo:
 </p>
+
+```python
+import numpy as np
+from scipy.optimize import minimize
+
+# Definição da função objetivo
+def objective_function(x):
+    return x[0]**2 + x[1]**2
+
+# Chute inicial
+x0 = np.array([1, 1])
+
+# Processo de minimização
+result = minimize(objective_function, x0)
+
+# Resultados
+print(result)
+```
+
+```bash
+# Saída da função
+message: Optimization terminated successfully.
+success: True
+status: 0
+fun: 2.311471135620994e-16
+x: [-1.075e-08 -1.075e-08]
+nit: 2
+    jac: [-6.600e-09 -6.600e-09]
+hess_inv: [[ 7.500e-01 -2.500e-01]
+            [-2.500e-01  7.500e-01]]
+nfev: 9
+njev: 3
+```
+<p align="justify">
+A documentação completa da função <code>scipy.optimize</code> pode ser vista no <a href="https://docs.scipy.org/doc/scipy-1.15.3/reference/generated/scipy.optimize.minimize.html" target="_blank" style="color: #2e6da4; font-weight: bold;"><i>link</i></a>.</p>
