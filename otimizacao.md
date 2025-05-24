@@ -249,6 +249,7 @@ hess_inv: [[ 7.500e-01 -2.500e-01]
 nfev: 9
 njev: 3
 ```
+
 <p align="justify">
 A documentação completa da função <code>scipy.optimize</code> pode ser vista no <a href="https://docs.scipy.org/doc/scipy-1.15.3/reference/generated/scipy.optimize.minimize.html" target="_blank" style="color: #2e6da4; font-weight: bold;"><i>link</i></a>.</p>
 
@@ -293,4 +294,10 @@ resultado = minimize(
 print("Solução ótima:")
 print(f"x = {resultado.x[0]:.2f} unidades")
 print(f"y = {resultado.x[1]:.2f} unidades")
+```
+
+```bash
+Solução ótima:
+x = 25.00 unidades
+y = 14.37 unidades
 ```
