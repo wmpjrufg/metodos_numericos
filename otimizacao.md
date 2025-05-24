@@ -8,7 +8,7 @@ title: 1 - Otimização
 <script id = "MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <!--Don't delete this script-->
 
-<h1>1.1 - Introdução</h1>
+<h2>1.1 - Introdução</h2>
 
 <p align = "justify">
 As técnicas de otimização consistem em métodos matemáticos para encontrar soluções ótimas sob restrições específicas, com aplicações em engenharia, ciências exatas e até mesmo ciências sociais.
@@ -197,7 +197,7 @@ x_i^{(L)} \leq x_i \leq x_i^{(U)}, & i=1,2,\ldots,n.
 A formulação do problema envolve \(M\) funções objetivo, representadas por \(f(\mathbf{x}) = (f_1(\mathbf{x}), f_2(\mathbf{x}), ..., f_M(\mathbf{x}))^T\). Onde \(x_i\) representa as variáveis de projeto do problema de otimização \(n\) dimensional. O conjunto de restrições são definidas pelas inequações \(g_j\), equações \(h_k\) e pelas restrições laterais \(x_i^{(L)}\) e \(x_i^{(U)}\). Os limites \(x_i^{(L)}\) e \(x_i^{(U)}\) estabelecem o espaço de projeto \(\mathcal{D}\) . No caso de objetivos de maximização, eles são convertidos para problemas de minimização, para isso as funções de maximização são multiplicadas por menos um. A Figura 2.1 apresenta possíveis soluções de um problema multiobjetivo de duas dimensões considerando a diversidade de abordagens.
 </p>
 
-<h1>1.2 - Usando pacotes de otimização</h1>
+<h2>1.2 - Usando pacotes de otimização</h2>
 
 <p align="justify">
 O Python oferece poderosas ferramentas de otimização através do pacote <code>scipy.optimize</code>. A função <code>minimize</code> implementa diversos algoritmos numéricos para encontrar mínimos de funções não-lineares.
